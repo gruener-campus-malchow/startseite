@@ -5,3 +5,7 @@ All CSS will be written in SCSS, so if you don't have a compiler you should prob
 You can compile for production using the following command:
 
     sass --style=compressed --no-source-map src/index.scss build/index.css
+
+For now, this project is using a simple php script to compile the DOM structure. Execute it via
+
+    php src/index.php > index.html
