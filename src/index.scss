@@ -1,10 +1,11 @@
-@import 'colors';
+@import 'vars';
+
 @import 'header';
 @import 'tiles';
 
 body, input, button {
   margin: 0;
-  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-family: $font-stack;
   font-weight: 300;
 }
 

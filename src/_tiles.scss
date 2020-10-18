@@ -68,6 +68,8 @@ body {
       max-height: 100%;
       z-index: -1;
 
+      transition: opacity .2s;
+
       // target path, rect, circle etc
       // feather icons don't contain any unstylable tags
       * {
@@ -81,29 +83,33 @@ body {
     }
   }
 }
-/*
-@media screen and (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr 1fr;
-    height: auto;
-    padding: 8px;
-    grid-gap: 8px;
-  }
 
-  .grid-cell {
-    grid-column: span 1;
-    grid-row: span 1;
-    padding: 3em 0;
-    max-height: 50vmin;
+
+@media screen and (max-width: $breakpoint-m) {
+
+  .grid-container {
+    height: auto;
+    padding: .5rem;
+
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+
+    .grid-cell {
+      max-height: 50vmin;
+      padding: 3rem 0;
+      grid-column: span 1 !important;
+      grid-row: span 1 !important;
+    }
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: $breakpoint-s) {
+
   .grid-container {
     grid-template-columns: 1fr;
-  }
 
-  .grid-cell {
-    max-height: 12rem;
+    .grid-cell {
+      max-height: 12rem;
+    }
   }
-}*/
+}
