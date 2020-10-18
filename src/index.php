@@ -62,6 +62,7 @@ function icon ($name) {
     <meta name=viewport content="initial-scale=1">
     <title>Campus Informations System</title>
     <link rel=stylesheet href=build/index.css>
+    <script src="src/timer.js"></script>
   </head>
   <body>
     <div class=cis-header>
@@ -80,21 +81,11 @@ function icon ($name) {
       -->
     </div>
     <div class=grid-container>
-      <!--div class="grid-cell grid-cell-vertical" data-cell-action=vertretungsplan>Vertretungsplan</div>
-      <a class="grid-cell grid-cell-horizontal" href="https://www.lernraum-berlin.de/v1und2/my/">Lernraum</a>
-      <a class=grid-cell href="https://cis.gruener-campus-malchow.de/belegungsplan/">Belegungsplan</a>
-      <div class="grid-cell grid-cell-vertical" data-cell-action=timer>Timer</div>
-      <a class=grid-cell href="https://gcm.schule/printer/">Drucker/Kopierer</a>
-      <div class="grid-cell grid-cell-vertical" data-cell-action=snake>Snake</div>
-      <a class=grid-cell href="http://fbi.gruener-campus-malchow.de/cis/wetterstation/">Wetterstation</a>
-      <a class="grid-cell grid-cell-vertical" href="http://gruener-campus-malchow.de">Webseite<div class="subtitle">Heute schon gelacht?™<br>Traurig, aber wahr:<br>Die offizielle Webpräsenz unserer Schule</div></a>
-      <a class="grid-cell grid-cell-horizontal" href="https://gcm.schule/tv/">CampusTV</a>
-      <a class=grid-cell href="https://gcm.schule/wififilter/">Wififilter</a-->
-
       <?php
       foreach ($tiles as $name => $data) {
         // start tag
         echo isset($data['href']) ? '<a href="' . $data['href'] . '"' : '<div';
+        echo ' data-label="' . preg_replace('/\W/', '-', $name) . '"';
         echo isset($data['layout']) ? ' class="grid-cell grid-cell-' . $data['layout'] . '">' : ' class=grid-cell>';
 
         // icon

@@ -1,0 +1,119 @@
+.grid-container .grid-cell.timer {
+
+  font-weight: 300;
+
+  .time-container {
+    margin: .5em 0;
+    font-size: 3rem;
+
+    cursor: default;
+
+    display: flex;
+    align-items: end;
+  }
+
+  .time-input {
+
+    width: 2ch;
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    background: none;
+    font-size: inherit;
+    color: inherit;
+    font-variant: tabular-nums;
+    cursor: pointer;
+
+    &.focussed {
+
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -10;
+
+        border-radius: 4px;
+        animation: timer-focus 1s infinite;
+      }
+    }
+  }
+
+  .button-container {
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /*
+  .button.fullscreen {
+    padding: 0;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 18px;
+    height: 18px;
+  }*/
+
+  &.full {
+    box-shadow: none;
+
+    .time-container {
+      font-size: 6em;
+    }
+  }
+
+  &.running .time-input {
+    cursor: default;
+  }
+
+  &.done .time-container {
+    animation: timer-done 1s infinite;
+  }
+}
+
+
+
+
+
+
+
+      /*.button.fullscreen {
+        padding: 0;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        width: 18px;
+        height: 18px;
+      }
+
+      .timer .button.fullscreen svg path {
+        fill: var(--tertiary-color);
+      }
+
+      .timer .button.fullscreen:hover svg path {
+        fill: var(--dark-text-color);
+      }*/
+
+@keyframes timer-focus {
+  0% { background-color: $primary-highlight-color }
+  50% { background-color: $primary-highlight-color }
+  65% { background-color: $secondary-highlight-color }
+  85% { background-color: $secondary-highlight-color }
+  100% { background-color: $primary-highlight-color }
+}
+
+@keyframes timer-done {
+  0% { color: $secondary-highlight-color }
+  55% { color: $secondary-highlight-color }
+  70% { color: transparent }
+  85% { color: transparent }
+  100% { color: $secondary-highlight-color }
+}
