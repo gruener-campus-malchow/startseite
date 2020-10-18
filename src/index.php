@@ -61,7 +61,7 @@ function icon ($name) {
     <meta charset=utf-8>
     <meta name=viewport content="initial-scale=1">
     <title>Campus Informations System</title>
-    <link rel="stylesheet" href="build/index.css">
+    <link rel=stylesheet href=build/index.css>
   </head>
   <body>
     <div class=cis-header>
@@ -95,7 +95,7 @@ function icon ($name) {
       foreach ($tiles as $name => $data) {
         // start tag
         echo isset($data['href']) ? '<a href="' . $data['href'] . '"' : '<div';
-        echo isset($data['layout']) ? ' class="grid-cell grid-cell-' . $data['layout'] . '">' : ' class="grid-cell">';
+        echo isset($data['layout']) ? ' class="grid-cell grid-cell-' . $data['layout'] . '">' : ' class=grid-cell>';
 
         // icon
         if (isset($data['icon'])) {
@@ -105,7 +105,7 @@ function icon ($name) {
         // title
         echo $name;
         // subtitle
-        echo isset($data['subtitle']) ? '<div class="subtitle">' .
+        echo isset($data['subtitle']) ? '<div class=subtitle>' .
           (is_array($data['subtitle']) ? implode('<br>', $data['subtitle']) : $data['subtitle'])
           . '</div>' : '';
 
