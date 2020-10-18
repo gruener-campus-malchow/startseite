@@ -1,0 +1,38 @@
+.grid-container .grid-cell .button {
+
+  margin: 0;
+  padding: .2em .5em;
+
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+  background: none;
+  border: 1px solid $tertiary-color;
+  border-radius: .25rem;
+  color: $tertiary-color;
+
+  cursor: pointer;
+  transition: border-color .2s, background-color .2s, color .2s;
+
+  &:hover {
+    background-color: $tertiary-color;
+    color: $dark-text-color;
+  }
+
+  &.primary {
+    border-color: $primary-highlight-color;
+    color: $primary-highlight-color;
+
+    &:hover {
+      background-color: $primary-highlight-color;
+      color: $light-text-color;
+    }
+  }
+
+  &:disabled {
+    background: none !important;
+    border-color: $secondary-color !important;
+    color: $secondary-color !important;
+    cursor: not-allowed;
+  }
+}
