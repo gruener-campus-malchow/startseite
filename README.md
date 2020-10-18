@@ -3,6 +3,8 @@ next generation start site
 
 [see this repository in action on GitHub Pages](https://gruener-campus-malchow.github.io/startseite/)
 
+This project is using [feather icons](https://github.com/feathericons/feather/)
+
 All CSS will be written in SCSS, so if you don't have a compiler you should probably install one from [sass-lang.com](https://sass-lang.com/install)
 You can compile for production using the following command:
 
