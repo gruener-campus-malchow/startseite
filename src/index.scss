@@ -1,8 +1,14 @@
-$primary-color: #333;
-$secondary-color: #444;
-$tertiary-color: #666;
-$primary-highlight-color: #583;
-$secondary-highlight-color: #7a3;
-$tertiary-highlight-color: #383;
-$dark-text-color: #111;
-$light-text-color: #fff;
+@import 'colors';
+@import 'header';
+@import 'tiles';
+
+body, input, button {
+  margin: 0;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: 300;
+}
+
+::selection {
+  background-color: $primary-highlight-color;
+  color: $light-text-color;
+}

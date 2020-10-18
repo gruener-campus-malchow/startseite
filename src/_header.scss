@@ -1,0 +1,82 @@
+.cis-header {
+
+  height: 3rem;
+  padding: 0 1rem;
+
+  background-color: $primary-highlight-color;
+  box-shadow: 0 -2px 4px #3338 inset;
+  color: $light-text-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ::selection {
+    color: $primary-highlight-color;
+    background-color: $light-text-color;
+  }
+
+  .cis-header-search {
+
+    box-sizing: border-box;
+    min-width: 40%;
+    height: 2rem;
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    display: flex;
+    overflow: hidden;
+
+    .cis-search-input {
+
+      flex-grow: 1;
+      margin: 0;
+      padding: .2em .5em;
+
+      font-size: 1rem;
+      background: none;
+      border: none;
+      border-right: 1px solid #ddd;
+      color: #ddd;
+      outline: 0;
+      box-shadow: none;
+
+      &::placeholder {
+        opacity: 1;
+        color: inherit;
+      }
+    }
+
+    .cis-search-button {
+
+      margin: 0;
+      padding: 0;
+      width: 2.5rem;
+
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: background-color .2s;
+
+      svg {
+
+        height: 1.25rem;
+        vertical-align: middle;
+
+        path {
+          transition: stroke .2s
+        }
+      }
+
+      &:hover {
+
+        background-color: #ddd;
+
+        svg path {
+          stroke: $primary-highlight-color;
+        }
+      }
+    }
+  }
+}
