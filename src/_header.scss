@@ -6,6 +6,7 @@
   background-color: $primary-highlight-color;
   box-shadow: 0 -2px 4px #3338 inset;
   color: $light-text-color;
+  white-space: nowrap;
 
   display: flex;
   align-items: center;
@@ -33,6 +34,7 @@
       flex-grow: 1;
       margin: 0;
       padding: .2em .5em;
+      width: 8rem; // weird fix but works™
 
       font-size: 1rem;
       background: none;
