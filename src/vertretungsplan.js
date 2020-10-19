@@ -20,6 +20,9 @@ let vp = {
     })
     .then((json) => {
       vp.populate(json);
+    })
+    .catch((error) => {
+      vp.error(vp.errors.failed);
     });
   },
 
@@ -88,12 +91,23 @@ let vp = {
   error: function (e) {
     switch (e) {
       case vp.errors.failed:
+      console.error('vertretungsplan not available: network error');
+      break;
       case vp.errors.empty:
-      console.error('vertretungsplan not available');
+      console.error('vertretungsplan not available (empty)');
       break;
       default:
       console.error('unknown error');
     }
+
+    // show error message
+    vp.cell.innerHTML = '';
+    vp.cell.appendChild(document.createTextNode('Kein Vertretungsplan verfügbar'));
+    let dsbButton = document.createElement('A');
+    dsbButton.innerHTML = 'DSB';
+    dsbButton.setAttribute('href', 'https://dsbmobile.de');
+    dsbButton.setAttribute('class', 'button primary');
+    vp.cell.appendChild(dsbButton);
   },
   // error types (this is like a bad version of a struct)
   errors: {
