@@ -92,6 +92,7 @@ body {
     padding: .5rem;
 
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
     grid-gap: .5rem;
 
     .grid-cell {
