@@ -89,19 +89,11 @@ let vp = {
 
   // error handling
   error: function (e) {
-    let error = '';
-    switch (e) {
-      case vp.errors.failed:
-      console.error('vertretungsplan not available: network error');
-      error = 'network unreachable or request failed';
-      break;
-      case vp.errors.empty:
-      console.error('vertretungsplan not available (empty)');
-      error = 'no data available';
-      break;
-      default:
+    // test if error is a known error or if someone screwed something up
+    if (Object.values(vp.errors).indexOf(e) > -1) {
+      console.error(e);
+    } else {
       console.error('unknown error');
-      error = 'i give up';
     }
 
     // show error message
@@ -113,14 +105,14 @@ let vp = {
     dsbButton.setAttribute('class', 'button primary');
     vp.cell.appendChild(dsbButton);
     let errorLabel = document.createElement('DIV');
-    errorLabel.innerHTML = error;
+    errorLabel.innerHTML = e;
     errorLabel.classList.add('subtitle');
     vp.cell.appendChild(errorLabel);
   },
   // error types (this is like a bad version of a struct)
   errors: {
-    failed: 0,
-    empty: 1
+    failed: 'network unreachable or request failed',
+    empty: 'no data available'
   }
 };
 
