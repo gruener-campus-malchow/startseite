@@ -1,0 +1,10 @@
+.snake {
+
+  overflow: hidden;
+
+  canvas {
+    image-rendering: optimizeSpeed;
+    width: 100%;
+    height: 100%;
+  }
+}
