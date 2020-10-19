@@ -89,15 +89,19 @@ let vp = {
 
   // error handling
   error: function (e) {
+    let error = '';
     switch (e) {
       case vp.errors.failed:
       console.error('vertretungsplan not available: network error');
+      error = 'network unreachable or request failed';
       break;
       case vp.errors.empty:
       console.error('vertretungsplan not available (empty)');
+      error = 'no data available';
       break;
       default:
       console.error('unknown error');
+      error = 'i give up';
     }
 
     // show error message
@@ -108,6 +112,10 @@ let vp = {
     dsbButton.setAttribute('href', 'https://dsbmobile.de');
     dsbButton.setAttribute('class', 'button primary');
     vp.cell.appendChild(dsbButton);
+    let errorLabel = document.createElement('DIV');
+    errorLabel.innerHTML = error;
+    errorLabel.classList.add('subtitle');
+    vp.cell.appendChild(errorLabel);
   },
   // error types (this is like a bad version of a struct)
   errors: {
