@@ -1,3 +1,15 @@
+/*
+_____  _          _       _
+|  __ \(_)        | |     (_)                    _
+| |  | |_ ___  ___| | __ _ _ _ __ ___   ___ _ __(_)
+| |  | | / __|/ __| |/ _` | | '_ ` _ \ / _ \ '__|
+| |__| | \__ \ (__| | (_| | | | | | | |  __/ |   _
+|_____/|_|___/\___|_|\__,_|_|_| |_| |_|\___|_|  (_)
+
+this was originally created to run in the browser's tab icon
+when scaled up, it might behave strangely
+*/
+
 let snake = {
   load: function () {
     snake.cell = document.querySelector('.grid-cell[data-label="Snake"]');
