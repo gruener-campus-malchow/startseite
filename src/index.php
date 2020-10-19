@@ -63,6 +63,7 @@ function icon ($name) {
     <title>Campus Informations System</title>
     <link rel=stylesheet href=build/index.css>
     <script src="src/timer.js"></script>
+    <script src="src/vertretungsplan.js"></script>
   </head>
   <body>
     <div class=cis-header>

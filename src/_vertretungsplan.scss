@@ -1,0 +1,77 @@
+.vertretungsplan {
+
+  // overwrite styles on smaller screens
+  padding: .4rem !important;
+  padding-right: .2rem !important;
+
+  .vp-container {
+
+    border-radius: .2rem;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: .4rem .2rem;
+    overflow-y: auto;
+
+    font-weight: 300;
+
+    .vp-header {
+
+      box-sizing: border-box;
+      height: 100%;
+      padding: .25rem;
+
+      background-color: $primary-highlight-color;
+      border-radius: .2rem;
+      font-size: .8rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .class-label {
+        position: sticky;
+        top: .2rem;
+      }
+    }
+
+    .vp-body {
+
+      height: calc(100% + .4rem);
+      margin: -.2rem 0;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      .vp-content {
+
+        margin: .2rem;
+        padding: .25rem;
+        padding-bottom: 0;
+        flex-grow: 1;
+
+        border: 1px solid $primary-highlight-color;
+        border-radius: .2rem;
+        font-size: 1rem;
+
+        display: grid;
+        grid-template: 1fr 1fr / 1fr auto;
+
+        .vp-content1, .vp-content2 {
+          font-size: 1rem;
+          white-space: nowrap;
+        }
+
+        .vp-content2 {
+          color: $secondary-highlight-color;
+        }
+
+        .vp-content3 {
+          font-size: .8rem;
+          text-align: center;
+          grid-column: span 2;
+        }
+      }
+    }
+  }
+}
