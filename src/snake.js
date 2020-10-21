@@ -1,5 +1,5 @@
 /*
-_____  _          _       _
+ _____  _          _       _
 |  __ \(_)        | |     (_)                    _
 | |  | |_ ___  ___| | __ _ _ _ __ ___   ___ _ __(_)
 | |  | | / __|/ __| |/ _` | | '_ ` _ \ / _ \ '__|
@@ -128,19 +128,19 @@ let snake = {
     switch (e.keyCode) {
       case 87:
       case 38:
-        snake.direction = snake.directions.up;
+        if (snake.direction != snake.directions.down) snake.direction = snake.directions.up;
         break;
       case 65:
       case 37:
-        snake.direction = snake.directions.left;
+        if (snake.direction != snake.directions.right) snake.direction = snake.directions.left;
         break;
       case 83:
       case 40:
-        snake.direction = snake.directions.down;
+        if (snake.direction != snake.directions.up) snake.direction = snake.directions.down;
         break;
       case 68:
       case 39:
-        snake.direction = snake.directions.right;
+        if (snake.direction != snake.directions.left) snake.direction = snake.directions.right;
         break;
       case 32:
         snake.start();
