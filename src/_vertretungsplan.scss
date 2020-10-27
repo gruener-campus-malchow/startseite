@@ -50,7 +50,6 @@
 
         margin: .2rem;
         padding: .25rem;
-        padding-bottom: 0;
         flex-grow: 1;
 
         border: 1px solid $primary-highlight-color;
@@ -59,9 +58,11 @@
         text-align: left;
 
         display: grid;
-        grid-template: 1fr 1fr / 1fr auto;
+        grid-template: 1fr auto / 1fr auto;
 
-        .vp-content1, .vp-content2 {
+        .vp-content1 {
+          width: 100%;
+          overflow: auto;
           font-size: 1rem;
           white-space: nowrap;
         }
