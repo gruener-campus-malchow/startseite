@@ -57,15 +57,15 @@ let vp = {
         for (contentKey in entry) {
           let content = entry[contentKey];
           // get required info from content
-          let hour = content['Stunde'];
-          let subject = content['Fach'];
+          let hour = content['Stunde'] || '';
+          let subject = content['Fach'] || '';
           let location = content['Raum'] != '---' ? content['Raum'] : '';
-          let note = content['Hinweis'].trim() || '';
-          let type = content['Art'].trim() || '';
+          let note = (content['Hinweis'] || '').trim();
+          let type = (content['Art'] || '').trim();
 
           // write that down, write that down
           let contentElement = createDiv('vp-content');
-          let generalContainer = createDiv('vp-content1', hour + '. ' + subject);
+          let generalContainer = createDiv('vp-content1', hour + (hour == '' ? '' : '. ') + subject);
           let roomContainer = createDiv('vp-content2', location);
           let typeContainer = createDiv('vp-content3', type + (type == '' || note == '' ? '' : ': ') + note);
 
