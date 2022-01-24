@@ -6,11 +6,11 @@ $tiles = [
   ],
   'Lernraum' => [
     'layout' => 'horizontal',
-    'href' => 'https://www.lernraum-berlin.de/v1und2/my/',
+    'href' => 'https://www.lernraum-berlin.de/v1/my/',
     'icon' => 'layout'
   ],
   'Belegungsplan' => [
-    'href' => 'https://cis.gruener-campus-malchow.de/belegungsplan/',
+    'href' => 'https://gcm.schule/belegungsplan/',
     'icon' => 'clipboard'
   ],
   'Timer' => [
@@ -27,7 +27,7 @@ $tiles = [
     'href' => 'http://fbi.gruener-campus-malchow.de/cis/wetterstation/',
     'icon' => 'sun'
   ],
-  'Webseite' => [
+  /*'Webseite' => [
     'layout' => 'vertical',
     'href' => 'http://gruener-campus-malchow.de',
     'subtitle' => [
@@ -36,6 +36,11 @@ $tiles = [
       'Die offizielle Webpräsenz unserer Schule'
     ],
     'icon' => 'link'
+  ],*/
+  'CampusSlides' => [
+    'layout' => 'vertical',
+    'href' => 'https://start.gcm.schule/dev/',
+    'icon' => 'layers'
   ],
   'CampusTV' => [
     'layout' => 'horizontal',
