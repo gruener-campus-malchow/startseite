@@ -39,7 +39,7 @@ $tiles = [
   ],*/
   'CampusSlides' => [
     'layout' => 'vertical',
-    'href' => 'https://start.gcm.schule/dev/',
+    'href' => 'https://gcm.schule/slides/',
     'icon' => 'layers'
   ],
   'CampusTV' => [
