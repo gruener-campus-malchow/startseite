@@ -67,6 +67,7 @@ function icon ($name) {
     <meta name=viewport content="initial-scale=1">
     <title>Campus Informations System</title>
     <link rel=stylesheet href=build/index.css>
+    <script src="src/campusslides.js"></script>
     <script src="src/timer.js"></script>
     <script src="src/vertretungsplan.js"></script>
     <script src="src/snake.js"></script>

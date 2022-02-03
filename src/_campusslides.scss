@@ -1,0 +1,56 @@
+.grid-container .grid-cell.slides-form {
+
+	gap: 1rem;
+	padding: 1rem;
+	font-size: 1rem;
+
+	h2 {
+		margin: 0;
+	}
+
+	.cisui-textarea {
+
+		margin: 0;
+		padding: .5rem;
+		border: none;
+
+		border-radius: 0.5rem;
+		color: #fff;
+		background-color: #222;
+		box-shadow: #000 0 .1rem .4rem inset;
+		overflow: auto;
+
+		flex-grow: 1;
+		box-sizing: border-box;
+		width: 100%;
+		resize: none;
+
+		&:focus {
+			outline: .2rem solid $primary-highlight-color;
+		}
+	}
+
+
+	.cisui-button {
+		font-size: inherit;
+		font-family: inherit;
+		font-weight: 600;
+		color: inherit;
+		box-sizing: border-box;
+		width: 100%;
+		padding: .2em .5em;
+		background-color: #fff1;
+		border: .2rem solid $tertiary-color;
+		border-radius: .5em;
+		outline: 0;
+		box-shadow: .1rem .2rem .4rem #0005;
+		transition: .2s;
+	}
+
+	.cisui-button:hover, .cisui-button:focus, .cisui-button:active {
+		border-color: $primary-highlight-color;
+		color: $secondary-highlight-color;
+		box-shadow: none;
+	}
+
+}
