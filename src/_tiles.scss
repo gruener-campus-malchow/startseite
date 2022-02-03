@@ -19,7 +19,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: .5rem;
-    box-shadow: 0 1px 2px $primary-color;
+    box-shadow: 1px 2px 4px #0007 inset;
     cursor: pointer;
     transition: background-color .2s, box-shadow .2s;
 
@@ -45,7 +45,7 @@ body {
     &:not(.static):hover {
 
       background-color: $primary-highlight-color;
-      box-shadow: none;
+      box-shadow: 1px 2px 4px #000a inset;
 
       .feather {
         opacity: 0;
