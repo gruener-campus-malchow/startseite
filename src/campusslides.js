@@ -9,7 +9,7 @@ let slides = {
 		slides.form.innerHTML = `
 				<h2>CampusSlides</h2>
 				<textarea class="cisui-textarea" name="slides-md"></textarea>
-				<button type="submit" class="cisui-button">speichern</button>`;
+				<button type="submit" class="cisui-button">slide it!</button>`;
 
 		slides.cell.parentNode.replaceChild(slides.form, slides.cell);
 	}
