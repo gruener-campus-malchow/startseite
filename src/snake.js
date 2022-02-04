@@ -117,7 +117,7 @@ let snake = {
         head.y --;
     }
 
-    if (snake.bodyAt(head.x, head.y) || head.x > 15 || head.x < 1 || head.y > 15 || head.y < 1) {
+    if (snake.bodyAt(head.x, head.y) || head.x > 15 || head.x < 0 || head.y > 15 || head.y < 0) {
       snake.gameOver = true;
     }
 
