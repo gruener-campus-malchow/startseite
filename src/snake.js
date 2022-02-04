@@ -125,6 +125,8 @@ let snake = {
   },
 
   control: function (e) {
+    if (e.target != document.body) return;
+
     switch (e.keyCode) {
       case 87:
       case 38:
