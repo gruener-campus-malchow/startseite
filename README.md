@@ -1,7 +1,7 @@
 # startseite
 This is a project at the **gruener-campus-malchow** attempting to replace the old, ugly home page we currently have with something new (and better).
 
-[see this project in action on GitHub Pages](https://gruener-campus-malchow.github.io/startseite/)
+[see this project in action](https://start.gcm.schule/)
 
 This project is using [feather icons](https://github.com/feathericons/feather/)
 
