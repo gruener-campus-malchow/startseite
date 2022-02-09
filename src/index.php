@@ -67,10 +67,13 @@ function icon ($name) {
     <meta name=viewport content="initial-scale=1">
     <title>Campus Informations System</title>
     <link rel=stylesheet href=build/index.css>
+    <?php /*
     <script src="src/campusslides.js"></script>
     <script src="src/timer.js"></script>
     <script src="src/vertretungsplan.js"></script>
     <script src="src/snake.js"></script>
+    */ ?>
+    <script src="build/index.min.js"></script>
   </head>
   <body>
     <div class=cis-header>
