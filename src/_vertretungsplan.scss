@@ -63,8 +63,13 @@
         .vp-content1 {
           width: 100%;
           overflow: auto;
+          scrollbar-width: none;
           font-size: 1rem;
           white-space: nowrap;
+
+          &::-webkit-scrollbar {
+              display: none;
+          }
         }
 
         .vp-content2 {
