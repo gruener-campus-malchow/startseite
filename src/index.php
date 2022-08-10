@@ -40,7 +40,8 @@ $tiles = [
   'CampusSlides' => [
     'layout' => 'vertical',
     'href' => 'https://gcm.schule/slides/',
-    'icon' => 'layers'
+    'icon' => 'layers',
+    'subtitle' => 'Präsentationen in 30 Sekunden™'
   ],
   'CampusTV' => [
     'layout' => 'horizontal',
