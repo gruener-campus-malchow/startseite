@@ -14,9 +14,10 @@
   
   .cis-section {
     flex: 1 0 0;
+    display: flex;
     
     &.align-right {
-      text-align: right;
+      justify-content: end;
     }
   }
 
