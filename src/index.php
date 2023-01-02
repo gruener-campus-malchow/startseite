@@ -64,41 +64,28 @@ function icon ($name) {
 ?><!doctype html>
 <html>
   <head>
-    <meta charset=utf-8>
-    <meta name=viewport content="initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
     <title>Campus Informations System</title>
-    <link rel=stylesheet href=build/index.css>
-    <?php /*
-    <script src="src/campusslides.js"></script>
-    <script src="src/timer.js"></script>
-    <script src="src/vertretungsplan.js"></script>
-    <script src="src/snake.js"></script>
-    */ ?>
-    <script src="build/index.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
   </head>
   <body>
-    <div class=cis-header>
-      <div class=cis-brand>CIS home</div>
-      <form class=cis-header-search action="https://ecosia.org/search" method=GET>
-        <input class=cis-search-input type=text name=q placeholder="Umweltfreundlich Suchen" required autofocus autocomplete=off>
-        <button class=cis-search-button type=submit><?php icon('search'); ?></button>
+    <div class="cis-header">
+      <div class="cis-brand">CIS home</div>
+      <form class="cis-header-search" action="https://ecosia.org/search" method=GET>
+        <input class="cis-search-input" type="text" name="q" placeholder="Umweltfreundlich Suchen" required autofocus autocomplete="off">
+        <button class="cis-search-button" type="submit"><?php icon('search'); ?></button>
       </form>
-      <div class=spacer><!-- this is here to center the search bar. feel free to replace with something useful if you want to have something on the right --></div>
-      <!--
-      Probleme mit ecosia:
-      1. Umweltverträglichkeit
-          nicht alle Server werden mit Strom aus erneuerbaren Quellen betrieben
-      2. Datenschutz
-          einige Daten (IP-Adresse, User Agent String, Suchanfragen) werden an bing (Microsoft) weitergegeben
-      -->
+      <div class="spacer"></div>
     </div>
-    <div class=grid-container>
+    <div class="grid-container">
       <?php
       foreach ($tiles as $name => $data) {
         // start tag
         echo isset($data['href']) ? '<a href="' . $data['href'] . '"' : '<div';
         echo ' data-label="' . preg_replace('/\W/', '-', $name) . '"';
-        echo isset($data['layout']) ? ' class="grid-cell grid-cell-' . $data['layout'] . '">' : ' class=grid-cell>';
+        echo isset($data['layout']) ? ' class="grid-cell grid-cell-' . $data['layout'] . '">' : ' class="grid-cell">';
 
         // icon
         if (isset($data['icon'])) {
@@ -108,7 +95,7 @@ function icon ($name) {
         // title
         echo $name;
         // subtitle
-        echo isset($data['subtitle']) ? '<div class=subtitle>' .
+        echo isset($data['subtitle']) ? '<div class="subtitle">' .
           (is_array($data['subtitle']) ? implode('<br>', $data['subtitle']) : $data['subtitle'])
           . '</div>' : '';
 
