@@ -7,8 +7,9 @@ let vp = {
 
     vp.elements = [];
 
-    const json_url = 'http://@@@@@@@@@@.@@@@@.@@@@@@@.net/example_data.json';
-    //const json_url = 'https://@@@.@@@@@@@-@@@@@@-@@@@@@@.de/@@@/@@@@@@@@@@@@.php?cert=@@@@@@@@@@@@@'; // nobody is going to find this secret api
+    //const json_url = 'http://@@@@@@@@@@.@@@@@.@@@@@@@.net/example_data.json';
+    //const json_url = 'https://@@@.@@@@@@@-@@@@@@-@@@@@@@.de/@@@/@@@@@@@@@@@@.php?cert=@@@@@@@@@@@@@';
+    const json_url = 'https://gcm.schule/cis/api/plan/today'; // nobody is going to find this secret api
 
     fetch(json_url)
     .then((response) => {
