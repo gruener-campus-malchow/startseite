@@ -10,6 +10,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+  
+  .cis-section {
+    flex: 1 0 0;
+    
+    &.align-right {
+      text-align: right;
+    }
+  }
 
   .cis-brand {
     
@@ -17,7 +26,7 @@
     text-decoration: none;
     font-family: 'VarelaRound';
     font-size: 1.2rem;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: .5rem;
     
@@ -104,6 +113,25 @@
           stroke: $white;
         }
       }
+    }
+  }
+}
+
+
+@media screen and (max-width: $breakpoint-m) {
+  .cis-header .cis-section:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $breakpoint-s) {
+  .cis-header {
+    .cis-section {
+      flex: auto;
+    }
+    
+    .cis-brand-title {
+      display: none;
     }
   }
 }

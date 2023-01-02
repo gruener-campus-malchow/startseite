@@ -69,14 +69,18 @@ function icon ($name) {
   </head>
   <body>
     <div class="cis-header">
-      <a class="cis-brand" href="/"><?php icon('logo-gcm'); ?>Campus-Informations-System</a>
-      <form class="cis-header-search" action="https://ecosia.org/search" method=GET>
+      <div class="cis-section align-left">
+        <a class="cis-brand" href="/"><?php icon('logo-gcm'); ?><div class="cis-brand-title">Campus-Informations-System</div></a>
+      </div>
+      <form class="cis-header-search cis-section" action="https://ecosia.org/search" method=GET>
         <input class="cis-search-input" type="text" name="q" placeholder="Umweltfreundlich Suchen" required autofocus autocomplete="off">
         <button class="cis-search-button" type="submit">
           <div class="cis-search-button-background"><?php icon('search'); ?></div>
         </button>
       </form>
-      <a class="secret" href="https://gcm.schule/admin/?geheim" target="_blank">Geheimer Admin-Bereich</a>
+      <div class="cis-section align-right">
+        <a class="secret" href="https://gcm.schule/admin/?geheim" target="_blank">Geheimer Admin-Bereich</a>
+      </div>
     </div>
     <div class="grid-container">
       <?php
