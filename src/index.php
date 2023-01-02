@@ -2,56 +2,52 @@
 
 $tiles = [
   'Vertretungsplan' => [
-    'layout' => 'vertical'
+    'layout' => 'vertical',
   ],
   'Lernraum' => [
     'layout' => 'horizontal',
     'href' => 'https://www.lernraum-berlin.de/v1/my/',
-    'icon' => 'layout'
+    'icon' => 'layout',
   ],
   'Belegungsplan' => [
     'href' => 'https://gcm.schule/belegungsplan/',
-    'icon' => 'clipboard'
+    'icon' => 'clipboard',
   ],
   'Timer' => [
     'layout' => 'vertical',
-    'href' => 'https://gcm.schule/timer.html'
+    'href' => 'https://gcm.schule/timer.html',
   ],
-  'Drucker/Kopierer' => [
-    'href' => 'https://gcm.schule/printer/',
-    'icon' => 'printer'
+  'Offizielle Webseite' => [
+    'href' => 'https://gruener-campus-malchow.de/',
+    'icon' => 'link',
+    'subtitle' => 'Weiterführende Informationen',
   ],
   'Snake' => [
-    'layout' => 'vertical'
-  ],
-  'Wetterstation' => [
-    'href' => 'http://fbi.gruener-campus-malchow.de/cis/wetterstation/',
-    'icon' => 'sun'
-  ],
-  /*'Webseite' => [
     'layout' => 'vertical',
-    'href' => 'http://gruener-campus-malchow.de',
-    'subtitle' => [
-      'Heute schon gelacht?™',
-      'Traurig, aber wahr:',
-      'Die offizielle Webpräsenz unserer Schule'
-    ],
-    'icon' => 'link'
-  ],*/
+  ],
+  'TDOT \'22' => [
+    'href' => 'https://gcm.schule/tdot/',
+    'subtitle' => 'Tag der offenen Tür 2022',
+  ],
   'GCM Slides' => [
     'layout' => 'vertical',
-    'href' => 'https://gcm.schule/slides/',
+    'href' => 'https://docs.gcm.schule/slides/',
     'icon' => 'layers',
-    'subtitle' => 'Präsentationen in 30 Sekunden™'
+    'subtitle' => 'Präsentationen in 30 Sekunden™',
   ],
-  'CampusTV' => [
-    'layout' => 'horizontal',
-    'href' => 'https://gcm.schule/tv/',
-    'icon' => 'tv'
+  'PHP Cheat Sheet' => [
+  	'href' => 'https://gcm.schule/php',
+  	'subtitle' => 'Nützliche PHP-Hacks, (nicht nur) für Herrn B.',
   ],
-  'Wififilter' => [
-    'href' => 'https://gcm.schule/wififilter/',
-    'icon' => 'wifi'
+  'Pandora Beta' => [
+  	'href' => 'https://gcm.schule/pandora/',
+  	'icon' => 'package',
+  	'subtitle' => 'Ein modernisiertes Design für die alte Schulwebseite',
+  ],
+  'Wikipedia GCM' => [
+    'href' => 'https://de.wikipedia.org/wiki/Grüner_Campus_Malchow',
+    'icon' => 'globe',
+    'subtitle' => 'Eintrag zu unserer Schule',
   ]
 ];
 

@@ -19,7 +19,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: 1rem;
-    cursor: default;
+    cursor: pointer;
 
     position: relative;
     display: flex;
@@ -70,7 +70,7 @@ body {
       // feather icons don't contain any unstylable tags
       * {
        fill: none;
-       stroke: #aaa;
+       stroke: #bbb;
        stroke-width: .5rem;
        vector-effect: non-scaling-stroke;
        stroke-linecap: round;
