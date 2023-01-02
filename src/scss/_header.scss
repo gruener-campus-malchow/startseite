@@ -3,18 +3,19 @@
   height: 3rem;
   padding: 0 1rem;
 
-  background-color: $primary-highlight-color;
-  box-shadow: 0 -2px 4px #3338 inset;
-  color: $light-text-color;
+  background-color: $green;
+  color: $white;
   white-space: nowrap;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  ::selection {
-    color: $primary-highlight-color;
-    background-color: $light-text-color;
+  .cis-brand {
+    &::selection {
+      color: $green;
+      background-color: $white;
+    }
   }
 
   .cis-header-search {
@@ -23,11 +24,15 @@
     min-width: 40%;
     height: 2rem;
 
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    background-color: $white;
+    border-radius: .5rem;
 
     display: flex;
     overflow: hidden;
+    
+    &:focus-within {
+      box-shadow: 0 0 0 2px $black;
+    }
 
     .cis-search-input {
 
@@ -39,13 +44,12 @@
       font-size: 1rem;
       background: none;
       border: none;
-      border-right: 1px solid #ddd;
-      color: #ddd;
+      color: $black;
       outline: 0;
       box-shadow: none;
 
       &::placeholder {
-        opacity: 1;
+        opacity: .5;
         color: inherit;
       }
     }
@@ -58,25 +62,32 @@
 
       background: none;
       border: none;
-      cursor: pointer;
-      transition: background-color .2s;
+      cursor: default;
+      
+      .cis-search-button-background {
+        height: 1.5rem;
+        margin: .25rem;
+        
+        border-radius: .25rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
       svg {
-
         height: 1.25rem;
         vertical-align: middle;
-
-        path {
-          transition: stroke .2s
-        }
       }
 
       &:hover {
 
-        background-color: #ddd;
+        .cis-search-button-background {
+          background-color: $green;
+        }
 
         svg path {
-          stroke: $primary-highlight-color;
+          stroke: $white;
         }
       }
     }

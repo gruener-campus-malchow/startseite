@@ -75,11 +75,11 @@ let snake = {
     for (let x = 0; x < 16; x ++) {
       for (let y = 0; y < 16; y ++) {
         if (snake.bodyAt(x, y)) {
-          setPixel(x, y, [85, 136, 51, 255]);
+          setPixel(x, y, [0, 170, 68, 255]);
         } else if (snake.food.x == x && snake.food.y == y) {
-          setPixel(x, y, [119, 170, 51, 255]);
+          setPixel(x, y, [204, 0, 0, 255]);
         } else {
-          setPixel(x, y, [51, 51, 51, 255]);
+          setPixel(x, y, [238, 238, 238, 255]);
         }
       }
     }

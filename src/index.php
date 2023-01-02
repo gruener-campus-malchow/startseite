@@ -75,7 +75,9 @@ function icon ($name) {
       <div class="cis-brand">CIS home</div>
       <form class="cis-header-search" action="https://ecosia.org/search" method=GET>
         <input class="cis-search-input" type="text" name="q" placeholder="Umweltfreundlich Suchen" required autofocus autocomplete="off">
-        <button class="cis-search-button" type="submit"><?php icon('search'); ?></button>
+        <button class="cis-search-button" type="submit">
+        	<div class="cis-search-button-background"><?php icon('search'); ?></div>
+    	</button>
       </form>
       <div class="spacer"></div>
     </div>

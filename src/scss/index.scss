@@ -4,18 +4,21 @@
 @import 'tiles';
 @import 'buttons';
 
-@import 'campusslides';
-@import 'timer';
-@import 'vertretungsplan';
-@import 'snake';
+@import 'widgets/campusslides';
+@import 'widgets/timer';
+@import 'widgets/vertretungsplan';
+@import 'widgets/snake';
 
-body, input, button {
+body {
   margin: 0;
   font-family: $font-stack;
-  font-weight: 300;
+}
+
+input, button {
+	font: inherit;
 }
 
 ::selection {
-  background-color: $primary-highlight-color;
-  color: $light-text-color;
+  background-color: $green;
+  color: $white;
 }
