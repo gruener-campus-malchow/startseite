@@ -15,10 +15,31 @@ body {
 }
 
 input, button {
-	font: inherit;
+  font: inherit;
 }
 
 ::selection {
   background-color: $green;
   color: $white;
+}
+
+.cis-header .secret {
+  font-family: 'Comic Sans MS', cursive;
+  color: #0ff;
+
+  @supports (background-clip:text) {
+    &:hover {
+      background: linear-gradient(to right, #f00, #00f);
+      background-clip: text;
+      color: transparent !important;
+      background-size: 2rem;
+      animation: secret .25s linear infinite;
+    }
+    
+    @keyframes secret {
+      to {
+        background-position: -2rem;
+      }
+    }
+  }
 }

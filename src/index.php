@@ -14,7 +14,8 @@ $tiles = [
     'icon' => 'clipboard'
   ],
   'Timer' => [
-    'layout' => 'vertical'
+    'layout' => 'vertical',
+    'href' => 'https://gcm.schule/timer.html'
   ],
   'Drucker/Kopierer' => [
     'href' => 'https://gcm.schule/printer/',
@@ -37,7 +38,7 @@ $tiles = [
     ],
     'icon' => 'link'
   ],*/
-  'CampusSlides' => [
+  'GCM Slides' => [
     'layout' => 'vertical',
     'href' => 'https://gcm.schule/slides/',
     'icon' => 'layers',
@@ -79,7 +80,7 @@ function icon ($name) {
         	<div class="cis-search-button-background"><?php icon('search'); ?></div>
     	</button>
       </form>
-      <div class="spacer"></div>
+      <a class="secret" href="https://gcm.schule/admin/?geheim" target="_blank">Geheimer Admin-Bereich</a>
     </div>
     <div class="grid-container">
       <?php

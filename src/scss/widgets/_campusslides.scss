@@ -1,56 +1,26 @@
-.grid-container .grid-cell.slides-form {
+.grid-container .grid-cell[data-label="GCM-Slides"] {
 
-	gap: 1rem;
-	padding: 1rem;
-	font-size: 1rem;
+  background: repeating-linear-gradient(135deg, #80c, #08c, #80c 100vmax);
+  background-size: 141.44vmax;
+  animation: slides 8s linear infinite paused;
+  color: $white;
+  
+  .feather, &:hover .feather {
+    opacity: 1;
+    
+    * {
+      stroke: $black;
+    }
+  }
+  
+  &:hover {
+    animation-play-state: running;
+  }
 
-	h2 {
-		margin: 0;
-	}
-
-	.cisui-textarea {
-
-		margin: 0;
-		padding: .5rem;
-		border: none;
-
-		border-radius: 0.5rem;
-		color: #fff;
-		background-color: #0004;
-		box-shadow: #0007 0 .1rem .6rem inset;
-		overflow: auto;
-
-		flex-grow: 1;
-		box-sizing: border-box;
-		width: 100%;
-		resize: none;
-
-		&:focus {
-			outline: .2rem solid $primary-highlight-color;
-		}
-	}
-
-
-	.cisui-button {
-		font-size: inherit;
-		font-family: inherit;
-		font-weight: 600;
-		color: inherit;
-		box-sizing: border-box;
-		width: 100%;
-		padding: .2em .5em;
-		background-color: #fff1;
-		border: .2rem solid #fff3;
-		border-radius: .5em;
-		outline: 0;
-		box-shadow: .1rem .2rem .4rem #0005;
-		transition: .2s;
-	}
-
-	.cisui-button:hover, .cisui-button:focus, .cisui-button:active {
-		border-color: $primary-highlight-color;
-		color: $secondary-highlight-color;
-		box-shadow: none;
-	}
+  @keyframes slides {
+    to {
+      background-position: -141.44vmax;
+    }
+  }
 
 }

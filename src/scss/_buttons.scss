@@ -25,11 +25,4 @@
       background-color: darken($green, 5%);
     }
   }
-
-  &:disabled {
-    background: none !important;
-    border-color: $secondary-color !important;
-    color: $secondary-color !important;
-    cursor: not-allowed;
-  }
 }
