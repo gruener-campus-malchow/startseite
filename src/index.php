@@ -36,13 +36,13 @@ $tiles = [
     'subtitle' => 'Präsentationen in 30 Sekunden™',
   ],
   'PHP Cheat Sheet' => [
-  	'href' => 'https://gcm.schule/php',
-  	'subtitle' => 'Nützliche PHP-Hacks, (nicht nur) für Herrn B.',
+    'href' => 'https://gcm.schule/php',
+    'subtitle' => 'Nützliche PHP-Hacks, (nicht nur) für Herrn B.',
   ],
   'Pandora Beta' => [
-  	'href' => 'https://gcm.schule/pandora/',
-  	'icon' => 'package',
-  	'subtitle' => 'Ein modernisiertes Design für die alte Schulwebseite',
+    'href' => 'https://gcm.schule/pandora/',
+    'icon' => 'package',
+    'subtitle' => 'Ein modernisiertes Design für die alte Schulwebseite',
   ],
   'Wikipedia GCM' => [
     'href' => 'https://de.wikipedia.org/wiki/Grüner_Campus_Malchow',
@@ -63,18 +63,18 @@ function icon ($name) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
-    <title>Campus Informations System</title>
+    <title>Campus-Informations-System</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
   </head>
   <body>
     <div class="cis-header">
-      <div class="cis-brand">CIS home</div>
+      <a class="cis-brand" href="/"><?php icon('logo-gcm'); ?>Campus-Informations-System</a>
       <form class="cis-header-search" action="https://ecosia.org/search" method=GET>
         <input class="cis-search-input" type="text" name="q" placeholder="Umweltfreundlich Suchen" required autofocus autocomplete="off">
         <button class="cis-search-button" type="submit">
-        	<div class="cis-search-button-background"><?php icon('search'); ?></div>
-    	</button>
+          <div class="cis-search-button-background"><?php icon('search'); ?></div>
+        </button>
       </form>
       <a class="secret" href="https://gcm.schule/admin/?geheim" target="_blank">Geheimer Admin-Bereich</a>
     </div>

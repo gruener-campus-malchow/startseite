@@ -12,10 +12,24 @@
   justify-content: space-between;
 
   .cis-brand {
+    
+    color: inherit;
+    text-decoration: none;
+    font-family: 'VarelaRound';
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    
+    svg {
+      height: 1.5rem;
+    }
+    
     &::selection {
       color: $green;
       background-color: $white;
     }
+    
   }
 
   .cis-header-search {
