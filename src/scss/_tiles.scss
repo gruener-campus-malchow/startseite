@@ -92,10 +92,9 @@ body {
     grid-gap: .5rem;
 
     .grid-cell {
-      max-height: 50vmin;
+      box-sizing: border-box;
       padding: 3rem 0;
       grid-column: span 1 !important;
-      grid-row: span 1 !important;
     }
   }
 }
@@ -106,7 +105,8 @@ body {
     grid-template-columns: 1fr;
 
     .grid-cell {
-      max-height: 16rem;
+      height: 16rem;
+      grid-row: span 1 !important;
     }
   }
 }
