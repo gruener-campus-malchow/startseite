@@ -3,7 +3,7 @@ let vp = {
     vp.cell = document.querySelector('.grid-cell[data-label="Vertretungsplan"]');
     vp.cell.classList.add('vertretungsplan');
     vp.cell.classList.add('static');
-    vp.cell.innerHTML = '';
+    vp.cell.innerHTML += '<div class="spinner"></div>';
 
     vp.elements = [];
 
@@ -20,6 +20,7 @@ let vp = {
       }
     })
     .then((json) => {
+      vp.cell.innerHTML = '';
       vp.populate(json);
     })
     .catch((error) => {

@@ -6,6 +6,23 @@
 
   text-align: center;
   font-weight: 300 !important;
+  
+  .spinner {
+    box-sizing: border-box;
+    width: 1em;
+    height: 1em;
+    margin-top: 1rem;
+    border: .25em solid;
+    color: $green;
+    border-color: currentColor currentColor transparent transparent;
+    border-radius: 50%;
+    animation: 1s spinner linear infinite;
+    
+    @keyframes spinner {
+      from { transform: none }
+      to { transform: rotate(360deg) }
+    }
+  }
 
   .vp-container {
 
