@@ -10,6 +10,10 @@
   border: none;
   border-radius: .5rem;
   color: $black;
+  
+  display: flex;
+  align-items: center;
+  gap: .25em;
 
   cursor: default;
 

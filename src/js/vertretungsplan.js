@@ -22,6 +22,8 @@ let vp = {
     .then((json) => {
       vp.cell.innerHTML = '';
       vp.populate(json);
+      
+      vp.cell.innerHTML += `<a class="button" href="https://dsbmobile.de" target="_blank">DSB&nbsp;${vp.external_link_icon}</a>`;
     })
     .catch((error) => {
       vp.error(vp.errors.failed);
@@ -101,21 +103,25 @@ let vp = {
     // show error message
     vp.cell.innerHTML = '';
     vp.cell.appendChild(document.createTextNode('Kein Vertretungsplan verfügbar'));
+    
+    let errorLabel = document.createElement('DIV');
+    errorLabel.innerHTML = e;
+    errorLabel.classList.add('subtitle', 'error-message');
+    vp.cell.appendChild(errorLabel);
+    
     let dsbButton = document.createElement('A');
-    dsbButton.innerHTML = 'DSB';
+    dsbButton.innerHTML = `DSB ${vp.external_link_icon}`;
     dsbButton.setAttribute('href', 'https://dsbmobile.de');
     dsbButton.setAttribute('class', 'button primary');
     vp.cell.appendChild(dsbButton);
-    let errorLabel = document.createElement('DIV');
-    errorLabel.innerHTML = e;
-    errorLabel.classList.add('subtitle');
-    vp.cell.appendChild(errorLabel);
   },
   // error types (this is like a bad version of a struct)
   errors: {
     failed: 'network unreachable or request failed',
     empty: 'no data available'
-  }
+  },
+  
+  external_link_icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>',
 };
 
 document.addEventListener('DOMContentLoaded', vp.init);

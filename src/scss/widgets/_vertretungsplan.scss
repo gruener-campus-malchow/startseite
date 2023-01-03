@@ -4,7 +4,7 @@
   padding: .5rem !important;
 
   text-align: center;
-  font-weight: 300 !important;
+  gap: .5rem;
   
   .spinner {
     box-sizing: border-box;
@@ -21,6 +21,11 @@
       from { transform: none }
       to { transform: rotate(360deg) }
     }
+  }
+  
+  .subtitle.error-message {
+    color: #bbb;
+    margin: 0;
   }
 
   .vp-container {
@@ -100,9 +105,5 @@
         }
       }
     }
-  }
-
-  .button {
-    margin-top: 1rem !important;
   }
 }
