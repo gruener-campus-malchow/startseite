@@ -1,0 +1,42 @@
+.grid-container {
+
+	.grid-cell[data-label="Lernraum"]:hover {
+		background-color: #fb0;
+		color: $black;
+	}
+
+	.grid-cell[data-label="Belegungsplan"]:hover {
+		background-color: #08f;
+	}
+
+	.grid-cell[data-label="Snake"]:not(.static):hover {
+		background-color: #c00;
+	}
+
+	.grid-cell[data-label="PHP-Cheat-Sheet"]:hover {
+		background-color: #75f;
+	}
+
+	.grid-cell[data-label="Pandora-Beta"]:hover {
+		background-color: #7b0;
+	}
+
+	.grid-cell[data-label="GCM-Slides"]:hover {
+
+	  background: repeating-linear-gradient(135deg, #80c, #08c, #80c 100vmax);
+	  background-size: 141.44vmax;
+	  animation: slides 8s linear infinite;
+
+	  @keyframes slides {
+		to {
+		  background-position: -141.44vmax;
+		}
+	  }
+
+	}
+
+	.grid-cell[data-label="Wikipedia-GCM"]:hover {
+		background-color: #d08;
+	}
+
+}
