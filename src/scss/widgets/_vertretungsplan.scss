@@ -32,7 +32,7 @@
 
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: .5rem .25rem;
+    gap: .5rem;
     overflow-y: auto;
 
     font-weight: 300;
@@ -60,11 +60,9 @@
 
     .vp-body {
 
-      height: calc(100% + .5rem);
-      margin: -.25rem 0;
-
       display: flex;
       flex-wrap: wrap;
+      gap: .5rem;
 
       .vp-content {
 
