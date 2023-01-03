@@ -1,27 +1,27 @@
-.grid-container {
+.grid-container .grid-cell:not(.static):hover {
 
-	.grid-cell[data-label="Lernraum"]:hover {
+	&[data-label="Lernraum"] {
 		background-color: #fb0;
 		color: $black;
 	}
 
-	.grid-cell[data-label="Belegungsplan"]:hover {
+	&[data-label="Belegungsplan"] {
 		background-color: #08f;
 	}
 
-	.grid-cell[data-label="Snake"]:not(.static):hover {
+	&[data-label="Snake"] {
 		background-color: #c00;
 	}
 
-	.grid-cell[data-label="PHP-Cheat-Sheet"]:hover {
+	&[data-label="PHP-Cheat-Sheet"] {
 		background-color: #75f;
 	}
 
-	.grid-cell[data-label="Pandora-Beta"]:hover {
+	&[data-label="Pandora-Beta"] {
 		background-color: #7b0;
 	}
 
-	.grid-cell[data-label="GCM-Slides"]:hover {
+	&[data-label="GCM-Slides"] {
 
 	  background: repeating-linear-gradient(135deg, #80c, #08c, #80c 100vmax);
 	  background-size: 141.44vmax;
@@ -35,7 +35,7 @@
 
 	}
 
-	.grid-cell[data-label="Wikipedia-GCM"]:hover {
+	&[data-label="Wikipedia-GCM"] {
 		background-color: #d08;
 	}
 
