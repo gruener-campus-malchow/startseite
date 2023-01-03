@@ -110,7 +110,7 @@ let vp = {
     vp.cell.appendChild(errorLabel);
     
     let dsbButton = document.createElement('A');
-    dsbButton.innerHTML = `DSB ${vp.external_link_icon}`;
+    dsbButton.innerHTML = `DSB&nbsp;${vp.external_link_icon}`;
     dsbButton.setAttribute('href', 'https://dsbmobile.de');
     dsbButton.setAttribute('class', 'button primary');
     vp.cell.appendChild(dsbButton);
@@ -121,7 +121,7 @@ let vp = {
     empty: 'no data available'
   },
   
-  external_link_icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>',
+  external_link_icon: '<svg width="16" height="16" viewBox="0 1 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>',
 };
 
 document.addEventListener('DOMContentLoaded', vp.init);
