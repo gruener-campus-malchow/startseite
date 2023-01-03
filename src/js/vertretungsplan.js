@@ -22,8 +22,6 @@ let vp = {
     .then((json) => {
       vp.cell.innerHTML = '';
       vp.populate(json);
-      
-      vp.cell.innerHTML += `<a class="button" href="https://dsbmobile.de" target="_blank">DSB&nbsp;${vp.external_link_icon}</a>`;
     })
     .catch((error) => {
       vp.error(vp.errors.failed);
@@ -80,6 +78,8 @@ let vp = {
         }
       }
     }
+      
+    vp.cell.innerHTML += `<a class="button" href="https://dsbmobile.de" target="_blank">DSB&nbsp;${vp.external_link_icon}</a>`;
 
     // simple helper function, pretty self-explanatory
     function createDiv(classList, content) {
