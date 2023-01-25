@@ -5,9 +5,12 @@ $tiles = [
     'layout' => 'vertical',
   ],
   'Lernraum' => [
-    'layout' => 'horizontal',
     'href' => 'https://www.lernraum-berlin.de/v1/my/',
     'icon' => 'layout',
+  ],
+  'Datenschutz' => [
+    'href' => 'https://gcm.schule/datenschutz',
+    'icon' => 'file-text',
   ],
   'Belegungsplan' => [
     'href' => 'https://gcm.schule/belegungsplan/',
