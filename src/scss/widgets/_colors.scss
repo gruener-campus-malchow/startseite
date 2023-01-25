@@ -4,6 +4,10 @@
 		background-color: #fb0;
 		color: $black;
 	}
+	
+	&[data-label="Datenschutz"] {
+		background-color: #0ca;
+	}
 
 	&[data-label="Belegungsplan"] {
 		background-color: #08f;
