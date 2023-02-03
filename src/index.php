@@ -62,11 +62,11 @@ function icon ($name) {
 }
 
 ?><!doctype html>
-<html>
+<html lang="de" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
-    <title>Campus-Informations-System</title>
+    <title>Grüner Campus Malchow</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
   </head>
@@ -78,7 +78,7 @@ function icon ($name) {
       <form class="cis-header-search cis-section" action="https://ecosia.org/search" method=GET>
         <input class="cis-search-input" type="text" name="q" placeholder="Umweltfreundlich Suchen" required autofocus autocomplete="off">
         <button class="cis-search-button" type="submit">
-          <div class="cis-search-button-background"><?php icon('search'); ?></div>
+          <span class="cis-search-button-background"><?php icon('search'); ?></span>
         </button>
       </form>
       <div class="cis-section align-right">
