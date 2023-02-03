@@ -7,10 +7,7 @@ $tiles = [
   'Lernraum' => [
     'href' => 'https://www.lernraum-berlin.de/v1/my/',
     'icon' => 'layout',
-  ],
-  'Datenschutz' => [
-    'href' => 'https://gcm.schule/datenschutz',
-    'icon' => 'file-text',
+    'layout' => 'horizontal',
   ],
   'Belegungsplan' => [
     'href' => 'https://gcm.schule/belegungsplan/',
@@ -42,10 +39,9 @@ $tiles = [
     'href' => 'https://gcm.schule/php',
     'subtitle' => 'Nützliche PHP-Hacks, (nicht nur) für Herrn B.',
   ],
-  'Pandora Beta' => [
-    'href' => 'https://gcm.schule/pandora/',
-    'icon' => 'package',
-    'subtitle' => 'Ein modernisiertes Design für die alte Schulwebseite',
+  'Datenschutz' => [
+    'href' => 'https://gcm.schule/datenschutz',
+    'icon' => 'file-text',
   ],
   'Wikipedia GCM' => [
     'href' => 'https://de.wikipedia.org/wiki/Grüner_Campus_Malchow',
