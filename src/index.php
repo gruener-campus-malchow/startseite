@@ -69,7 +69,7 @@ function icon ($name) {
   <body>
     <div class="cis-header">
       <div class="cis-section align-left">
-        <a class="cis-brand" href="/"><?php icon('logo-gcm'); ?><div class="cis-brand-title">Campus-Informations-System</div></a>
+        <a class="cis-brand" href="/"><?php icon('logo-gcm'); ?><div class="cis-brand-title">Startseite</div></a>
       </div>
       <form class="cis-header-search cis-section" action="https://ecosia.org/search" method=GET>
         <input class="cis-search-input" type="text" name="q" placeholder="Umweltfreundlich Suchen" required autofocus autocomplete="off">
