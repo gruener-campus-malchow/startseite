@@ -1,11 +1,9 @@
-let vp = {
+const vp = {
   init: function () {
     vp.cell = document.querySelector('.grid-cell[data-label="Vertretungsplan"]');
     vp.cell.classList.add('vertretungsplan');
     vp.cell.classList.add('static');
     vp.cell.innerHTML += '<div class="spinner"></div>';
-
-    vp.elements = [];
 
     //const json_url = 'http://@@@@@@@@@@.@@@@@.@@@@@@@.net/example_data.json';
     //const json_url = 'https://@@@.@@@@@@@-@@@@@@-@@@@@@@.de/@@@/@@@@@@@@@@@@.php?cert=@@@@@@@@@@@@@';
@@ -24,7 +22,7 @@ let vp = {
       vp.populate(json);
     })
     .catch(error => {
-      console.log(error);
+      console.error(error);
       vp.error(vp.errors.failed);
     });
   },
