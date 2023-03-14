@@ -9,7 +9,7 @@ let vp = {
 
     //const json_url = 'http://@@@@@@@@@@.@@@@@.@@@@@@@.net/example_data.json';
     //const json_url = 'https://@@@.@@@@@@@-@@@@@@-@@@@@@@.de/@@@/@@@@@@@@@@@@.php?cert=@@@@@@@@@@@@@';
-    const json_url = 'https://gcm.schule/cis/api/plan/today'; // nobody is going to find this secret api
+    const json_url = 'https://gcm.schule/cis/api/plan/sus'; // nobody is going to find this secret api
 
     fetch(json_url)
     .then((response) => {
@@ -19,74 +19,62 @@ let vp = {
         vp.error(vp.errors.failed);
       }
     })
-    .then((json) => {
+    .then(json => {
       vp.cell.innerHTML = '';
       vp.populate(json);
     })
-    .catch((error) => {
+    .catch(error => {
+      console.log(error);
       vp.error(vp.errors.failed);
     });
   },
 
 
   populate: function (json) {
-    // this is some additional info we don't need, but is included in the api anyway
-    const special_keys = ['Tag', 'Time', 'Informationen'];
-    // the data for the current day is the first entry in the json
-    // we don't show vertretungsplan for other days
-    let day = json[0];
-    // if day is 'false', no vertretungsplan is available
-    if (day == 'false') return vp.error(vp.errors.empty);
+    // if no vertretungsplan is available
+    if (!json) return vp.error(vp.errors.empty);
+
+    // create container for general information
+    const general_container = create_element('div', {class: 'vp-general'}, [
+      create_element('div', {class: 'vp-header'}, (new Date(json.date)).toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })),
+    ]);
+
+    // add info as paragraphs
+    json.info.forEach(info => general_container.append(create_element('div', {class: 'vp-content'}, info)));
+
     // create inner container
-    vp.elements.container = createDiv('vp-container');
-    vp.cell.appendChild(vp.elements.container);
+    const container = create_element('div', {class: 'vp-container'}, [general_container]);
+    vp.cell.append(container);
 
-    for (entryKey in day) {
-      let entry = day[entryKey]
-      // this means that the entry is a class
-      if (!special_keys.includes(entryKey)) {
-        let year = parseInt(entryKey); // hacky solution, but it works™
-        // append class name and content container to cell
-        let classContainer = createDiv('vp-header');
-        let classLabel = createDiv('class-label', entryKey);
-        let contentContainer = createDiv('vp-body');
+    json.list.forEach(entry => {
+      const body = create_element('div', {class: 'vp-body'});
+      container.append(create_element('div', {class: 'vp-header'}, [
+        create_element('div', {class: 'class-label'}, entry.name),
+      ]), body);
 
-        classContainer.appendChild(classLabel);
-        vp.elements.container.appendChild(classContainer);
-        vp.elements.container.appendChild(contentContainer);
+      entry.contents.forEach(row => {
+        const type = row.type || '';
+        const note = row.note || '';
+        const resolve_replacement = attr => typeof attr == 'object' ? `<s>${attr.old}</s> <strong>${attr.new}</strong>` : (attr || '');
 
-        // add content to container
-        for (contentKey in entry) {
-          let content = entry[contentKey];
-          // get required info from content
-          let hour = content['Stunde'] || '';
-          let subject = content['Fach'] || '';
-          let location = content['Raum'] != '---' ? content['Raum'] : '';
-          let note = (content['Hinweis'] || '').trim();
-          let type = (content['Art'] || '').trim();
-
-          // write that down, write that down
-          let contentElement = createDiv('vp-content');
-          let generalContainer = createDiv('vp-content1', hour + (hour == '' ? '' : '. ') + subject);
-          let roomContainer = createDiv('vp-content2', location);
-          let typeContainer = createDiv('vp-content3', type + (type == '' || note == '' ? '' : ': ') + note);
-
-          contentElement.appendChild(generalContainer);
-          contentElement.appendChild(roomContainer);
-          contentElement.appendChild(typeContainer);
-          contentContainer.appendChild(contentElement);
-        }
-      }
-    }
+        body.append(create_element('div', {class: 'vp-content'}, [
+          create_element('div', {class: 'vp-content1'}, (!row.time ? '' : `<strong>${row.time || ''}.</strong> `) + resolve_replacement(row.subject)),
+          create_element('div', {class: 'vp-content2'}, resolve_replacement(row.room)),
+          create_element('div', {class: 'vp-content3'}, row.type == 'Vertretung' ? resolve_replacement(row.teacher) : ''),
+          create_element('div', {class: 'vp-content3'}, type + (!type || !note ? '' : ': ') + note),
+        ]));
+      });
+    });
       
     vp.cell.innerHTML += `<a class="button" href="https://dsbmobile.de" target="_blank">DSB&nbsp;${vp.external_link_icon}</a>`;
 
-    // simple helper function, pretty self-explanatory
-    function createDiv(classList, content) {
-      let element = document.createElement('DIV');
-      element.setAttribute('class', classList);
-      element.innerHTML = content || '';
-      return element;
+    // simple helper function, see https://gist.github.com/eintyp/f9106f6b6b93189c8991f89cb1335554
+    function create_element(tag, attributes = {}, content = []) {
+      const elem = document.createElement(tag);
+      for (attr in attributes) elem.setAttribute(attr, attributes[attr]);
+      if (typeof content === 'string') elem.innerHTML = content;
+      else content.forEach(child => elem.append(child));
+      return elem;
     }
   },
 

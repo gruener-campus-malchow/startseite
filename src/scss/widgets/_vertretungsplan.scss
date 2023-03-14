@@ -40,18 +40,36 @@
     gap: .5rem;
     overflow-y: auto;
 
-    font-weight: 300;
+    font-weight: normal;
+    
+    .vp-general {
+      grid-column: span 2;
+
+      background: #fff;
+      border-radius: .5rem;
+      
+      .vp-header {
+        position: sticky;
+        top: 0;
+      }
+      
+      .vp-content {
+        font-size: .8rem;
+        margin: .25rem;
+        text-align: left;
+      }
+    }
 
     .vp-header {
 
       box-sizing: border-box;
-      height: 100%;
       padding: .25rem;
 
       background-color: $green;
       color: $white;
       border-radius: .5rem;
       font-size: .8rem;
+      font-weight: bold;
 
       display: flex;
       align-items: center;
@@ -91,7 +109,7 @@
           white-space: nowrap;
 
           &::-webkit-scrollbar {
-              display: none;
+            display: none;
           }
         }
 
