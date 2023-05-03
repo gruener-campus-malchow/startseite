@@ -64,7 +64,7 @@ const vp = {
       });
     });
       
-    vp.cell.innerHTML += `<a class="button" href="https://dsbmobile.de" target="_blank">DSB&nbsp;${vp.external_link_icon}</a>`;
+    vp.cell.innerHTML += `<a class="button" href="https://dsbmobile.de" target="_blank" rel="noreferrer">DSB&nbsp;${vp.external_link_icon}</a>`;
 
     // simple helper function, see https://gist.github.com/eintyp/f9106f6b6b93189c8991f89cb1335554
     function create_element(tag, attributes = {}, content = []) {
@@ -99,6 +99,7 @@ const vp = {
     dsbButton.innerHTML = `DSB&nbsp;${vp.external_link_icon}`;
     dsbButton.setAttribute('href', 'https://dsbmobile.de');
     dsbButton.setAttribute('class', 'button primary');
+    dsbButton.setAttribute('rel', 'noreferrer');
     vp.cell.appendChild(dsbButton);
   },
   // error types (this is like a bad version of a struct)
