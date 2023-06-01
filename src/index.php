@@ -2,6 +2,7 @@
 
 $tiles = [
   'Vertretungsplan' => [
+    'href' => 'https://gcm.schule/vertretungsplan/',
     'layout' => 'vertical',
   ],
   'Lernraum' => [
