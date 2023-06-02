@@ -1,6 +1,7 @@
 const vp = {
   init: function () {
     vp.cell = document.querySelector('.grid-cell[data-label="Vertretungsplan"]');
+    vp.cell.removeAttribute('href');
     vp.cell.classList.add('vertretungsplan');
     vp.cell.classList.add('static');
     vp.cell.innerHTML += '<div class="spinner"></div>';
@@ -64,7 +65,7 @@ const vp = {
       });
     });
       
-    vp.cell.innerHTML += `<a class="button" href="https://dsbmobile.de" target="_blank" rel="noreferrer">DSB&nbsp;${vp.external_link_icon}</a>`;
+    vp.cell.innerHTML += `<a class="button" href="https://gcm.schule/vertretungsplan/" target="_blank" rel="noreferrer">Vertretungsplan öffnen&nbsp;${vp.external_link_icon}</a>`;
 
     // simple helper function, see https://gist.github.com/eintyp/f9106f6b6b93189c8991f89cb1335554
     function create_element(tag, attributes = {}, content = []) {
