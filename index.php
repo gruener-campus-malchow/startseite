@@ -52,7 +52,7 @@ $tiles = [
 ];
 
 function icon ($name) {
-  $src = 'src/icons/' . $name . '.svg';
+  $src = 'icons/' . $name . '.svg';
   if (file_exists($src)) {
     include $src;
   }
