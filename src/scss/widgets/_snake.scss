@@ -3,7 +3,7 @@
   overflow: hidden;
 
   canvas {
-    image-rendering: optimizeSpeed;
+    image-rendering: pixelated;
     width: 100%;
     height: 100%;
   }
