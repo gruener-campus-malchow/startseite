@@ -1,6 +1,6 @@
 # startseite
 *startseite* is a basic home page for the **gruener-campus-malchow**.
-The old home page featured a bold orange (yes, *orange*) font with heavy shadows, carefully arranged with pixelated images.
+The old home page featured a bold orange (yes, *orange*) font with heavy shadows, carefully arranged with blurry images.
 This appeared to the author as optimizable.
 
 [**`check out the ✨glamorous✨ design here`**](https://start.gcm.schule/)
