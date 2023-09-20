@@ -6,7 +6,7 @@ $tiles = [
     'layout' => 'vertical',
   ],
   'Lernraum' => [
-    'href' => 'https://www.lernraum-berlin.de/v1/my/',
+    'href' => 'https://11k10.lernraum-berlin.de/',
     'icon' => 'layout',
     'layout' => 'horizontal',
   ],
