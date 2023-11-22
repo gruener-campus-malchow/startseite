@@ -1,0 +1,34 @@
+.promotion-banner {
+  padding: 1rem;
+  background: $green;
+  color: $white;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  
+  h2, p {
+    margin: 0;
+  }
+  
+  .call-to-action {
+    padding: 1em 2em;
+    border-radius: .5em;
+    font-weight: bold;
+    text-decoration: none;
+    background: $white;
+    color: $black;
+    user-select: none;
+    cursor: default;
+    
+    &:hover {
+      background: #eee;
+    }
+  }
+  
+  ::selection {
+    background: $black;
+  }
+}

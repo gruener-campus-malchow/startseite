@@ -1,5 +1,17 @@
 <?php
 
+date_default_timezone_set('Europe/Berlin');
+$promotions = [
+	[
+		'start-date' => strtotime('2023-12-01'),
+		'end-date' => strtotime('2024-01-12 18:00'),
+		'headline' => '12hackn8@gcm',
+		'body' => 'vom <strong>12. Januar 2024</strong> bis <strong>13. Januar 2024</strong>',
+		'button-text' => 'Infos & Anmeldung',
+		'button-url' => 'https://hackn8.de',
+	],
+];
+
 $tiles = [
 	'Vertretungsplan' => [
 		'href' => 'https://gcm.schule/vertretungsplan/',
@@ -66,7 +78,7 @@ function icon ($name) {
 <link rel="stylesheet" href="index.css">
 <script src="index.js"></script>
 
-<div class="cis-header">
+<header class="cis-header">
 	<div class="cis-section align-left">
 		<a class="cis-brand" href="/"><?php icon('logo-gcm'); ?><div class="cis-brand-title">Startseite</div></a>
 	</div>
@@ -79,8 +91,22 @@ function icon ($name) {
 	<div class="cis-section align-right">
 		<a class="secret" href="https://gcm.schule/admin/?geheim" target="_blank">Geheimer Admin-Bereich</a>
 	</div>
-</div>
-<div class="grid-container">
+</header>
+
+<?php
+	foreach ($promotions as $promotion) {
+		if (array_key_exists('start-date', $promotion) && time() < $promotion['start-date']) continue;
+		if (array_key_exists('end-date', $promotion) && time() > $promotion['end-date']) continue;
+		
+		echo "<section class=\"promotion-banner\">\n";
+		if (array_key_exists('headline', $promotion)) echo "\t<h2>{$promotion['headline']}</h2>\n";
+		if (array_key_exists('body', $promotion)) echo "\t<p>{$promotion['body']}</p>\n";
+		if (array_key_exists('button-text', $promotion) && array_key_exists('button-url', $promotion)) echo "\t<a class=\"call-to-action\" href=\"{$promotion['button-url']}\" rel=\"noreferrer\">{$promotion['button-text']}</a>\n";
+		echo "</section>\n";
+	}
+?>
+
+<section class="grid-container">
 	<?php
 	foreach ($tiles as $name => $data) {
 		// start tag
@@ -104,4 +130,4 @@ function icon ($name) {
 		echo isset($data['href']) ? '</a>' : '</div>';
 	}
 	?>
-</div>
+</section>

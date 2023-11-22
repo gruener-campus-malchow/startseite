@@ -1,7 +1,10 @@
 .cis-header {
 
+  position: sticky;
+  top: 0;
   height: 3rem;
   padding: 0 1rem;
+  z-index: 80;
 
   background-color: $green;
   color: $white;
