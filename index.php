@@ -35,8 +35,9 @@ $tiles = [
 		'icon' => 'link',
 		'subtitle' => 'Weiterführende Informationen',
 	],
-	'Snake' => [
+	'Pixelmap' => [
 		'layout' => 'vertical',
+		'href' => 'https://gcm.schule/pixelmap',
 	],
 	'TDOT \'22' => [
 		'href' => 'https://gcm.schule/tdot/',
@@ -77,6 +78,14 @@ function icon ($name) {
 <title>Grüner Campus Malchow</title>
 <link rel="stylesheet" href="index.css">
 <script src="index.js"></script>
+<script src="fireworks.js"></script>
+<script>
+window.addEventListener('load', () => {
+	const container = document.querySelector('.promotion-banner')
+	const fireworks = new Fireworks.default(container)
+	fireworks.start()
+})
+</script>
 
 <header class="cis-header">
 	<div class="cis-section align-left">
