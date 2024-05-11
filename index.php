@@ -39,9 +39,10 @@ $tiles = [
 		'layout' => 'vertical',
 		'href' => 'https://gcm.schule/pixelmap',
 	],
-	'TDOT \'22' => [
-		'href' => 'https://gcm.schule/tdot/',
-		'subtitle' => 'Tag der offenen Tür 2022',
+	'Material' => [
+		'href' => 'https://gcm.schule/material/',
+		'icon' => 'book',
+		'subtitle' => 'Unterrichtsmaterial einiger Kurse',
 	],
 	'GCM Slides' => [
 		'layout' => 'vertical',
