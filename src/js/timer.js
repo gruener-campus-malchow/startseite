@@ -5,7 +5,7 @@ const timer = {
     
     timer.iframe = document.createElement('IFRAME');
     timer.iframe.className = timer.cell.className;
-    timer.iframe.src = 'https://gcm.schule/timer.html#embed';
+    timer.iframe.src = 'https://gcm.schule/timer/#embed';
     timer.iframe.allowFullscreen = true;
     timer.cell.replaceWith(timer.iframe);
   }
