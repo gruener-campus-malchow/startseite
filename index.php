@@ -77,8 +77,8 @@ function icon ($name) {
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1">
 <title>Grüner Campus Malchow</title>
-<link rel="stylesheet" href="index.css">
-<script src="index.js"></script>
+<link rel="stylesheet" href="index.css?<?=filemtime('style.css')?>">
+<script src="index.js?<?=filemtime('style.css')?>"></script>
 
 <header class="cis-header">
 	<div class="cis-section align-left">
