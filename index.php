@@ -52,7 +52,11 @@ $tiles = [
 	],
 	'PHP Cheat Sheet' => [
 		'href' => 'https://gcm.schule/php',
-		'subtitle' => 'Nützliche PHP-Hacks, (nicht nur) für Herrn B.',
+		'subtitle' => 'Nützliche PHP-Hacks',
+	],
+	'Github Repo der Schule' => [
+		'href' => 'https://github.com/gruener-campus-malchow',
+		'subtitle' => 'Github Repo der Schule',
 	],
 	'Datenschutz' => [
 		'href' => 'https://gcm.schule/datenschutz',
