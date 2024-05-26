@@ -24,7 +24,7 @@ $tiles = [
 	],
 	'Github Repo der Schule' => [
 		'href' => 'https://github.com/gruener-campus-malchow',
-		'subtitle' => 'Github Repo der Schule',
+		'subtitle' => 'Code und Projekte, die wir manchmal wirklich benutzen',
 	],
 	'Timer' => [
 		'layout' => 'vertical',
