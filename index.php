@@ -22,7 +22,7 @@ $tiles = [
 		'icon' => 'layout',
 		'layout' => 'horizontal',
 	],
-	'Github Repo der Schule' => [
+	'Github' => [
 		'href' => 'https://github.com/gruener-campus-malchow',
 		'subtitle' => 'Code und Projekte, die wir manchmal wirklich benutzen',
 	],
