@@ -22,9 +22,9 @@ $tiles = [
 		'icon' => 'layout',
 		'layout' => 'horizontal',
 	],
-	'Belegungsplan' => [
-		'href' => 'https://gcm.schule/belegungsplan/',
-		'icon' => 'clipboard',
+	'Github Repo der Schule' => [
+		'href' => 'https://github.com/gruener-campus-malchow',
+		'subtitle' => 'Github Repo der Schule',
 	],
 	'Timer' => [
 		'layout' => 'vertical',
@@ -53,10 +53,6 @@ $tiles = [
 	'PHP Cheat Sheet' => [
 		'href' => 'https://gcm.schule/php',
 		'subtitle' => 'Nützliche PHP-Hacks',
-	],
-	'Github Repo der Schule' => [
-		'href' => 'https://github.com/gruener-campus-malchow',
-		'subtitle' => 'Github Repo der Schule',
 	],
 	'Datenschutz' => [
 		'href' => 'https://gcm.schule/datenschutz',
