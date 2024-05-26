@@ -85,8 +85,11 @@ function icon ($name) {
 		<a class="cis-brand" href="/"><?php icon('logo-gcm'); ?><div class="cis-brand-title">Startseite</div></a>
 	</div>
 	<form class="cis-header-search cis-section" action="https://ecosia.org/search" method=GET>
-		<input class="cis-search-input" type="text" name="q" placeholder="Umweltfreundlich Suchen" required autofocus autocomplete="off">
-		<button class="cis-search-button" type="submit">
+		<input class="cis-search-input" type="text" name="q" placeholder="Suchen oder KI fragen" required autofocus autocomplete="off">
+		<button id="chat-search" class="cis-search-button" type="button" title="KI fragen">
+			<span class="cis-search-button-background"><?php icon('cpu'); ?></span>
+		</button>
+		<button class="cis-search-button" type="submit" title="suchen">
 			<span class="cis-search-button-background"><?php icon('search'); ?></span>
 		</button>
 	</form>

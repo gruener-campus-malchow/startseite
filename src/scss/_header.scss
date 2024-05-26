@@ -93,13 +93,19 @@
       
       .cis-search-button-background {
         height: 1.5rem;
-        margin: .25rem;
+        margin: .25rem 0;
         
         border-radius: .25rem;
         
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+      &:last-of-type .cis-search-button-background {
+        margin-right: .25rem;
+      }
+      &:first-of-type .cis-search-button-background {
+        margin-left: .25rem;
       }
 
       svg {
@@ -108,6 +114,8 @@
       }
 
       &:hover {
+
+	color: $white;
 
         .cis-search-button-background {
           background-color: $green;
