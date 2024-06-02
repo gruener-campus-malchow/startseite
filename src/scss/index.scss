@@ -11,10 +11,10 @@
 @import 'widgets/snake';
 
 
-@font-face { font-family: 'Ubuntu'; font-style: normal; font-weight: normal; src: url('https://gcm.schule/fonts/Ubuntu-R.ttf') format('truetype'); }
-@font-face { font-family: 'Ubuntu'; font-style: normal; font-weight: bold; src: url('https://gcm.schule/fonts/Ubuntu-B.ttf') format('truetype'); }
-@font-face { font-family: 'Ubuntu'; font-style: italic; font-weight: normal; src: url('https://gcm.schule/fonts/Ubuntu-RI.ttf') format('truetype'); }
-@font-face { font-family: 'Ubuntu'; font-style: italic; font-weight: bold; src: url('https://gcm.schule/fonts/Ubuntu-BI.ttf') format('truetype'); }
+@font-face { font-family: 'Ubuntu'; font-style: normal; font-weight: normal; src: url('https://gcm.schule/fonts/ubuntu-r.woff2') format('woff2'); }
+@font-face { font-family: 'Ubuntu'; font-style: normal; font-weight: bold; src: url('https://gcm.schule/fonts/ubuntu-b.woff2') format('woff2'); }
+@font-face { font-family: 'Ubuntu'; font-style: italic; font-weight: normal; src: url('https://gcm.schule/fonts/ubuntu-ri.woff2') format('woff2'); }
+@font-face { font-family: 'Ubuntu'; font-style: italic; font-weight: bold; src: url('https://gcm.schule/fonts/ubuntu-bi.woff2') format('woff2'); }
 
 
 body {
