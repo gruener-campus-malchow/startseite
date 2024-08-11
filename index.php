@@ -10,6 +10,14 @@ $promotions = [
 		'button-text' => 'Infos & Anmeldung',
 		'button-url' => 'https://hackn8.de',
 	],
+	[
+		'start-date' => strtotime('2024-10-07'),
+		'end-date' => strtotime('2024-10-17 14:00'),
+		'headline' => '14hackn8@gcm',
+		'body' => 'vom <strong>16. Oktober 2024</strong> bis <strong>17. Oktober 2024</strong>',
+		'button-text' => 'Infos & Anmeldung',
+		'button-url' => 'https://hackn8.de',
+	],
 ];
 
 $tiles = [
@@ -106,7 +114,7 @@ function icon ($name) {
 		echo "<section class=\"promotion-banner\">\n";
 		if (array_key_exists('headline', $promotion)) echo "\t<h2>{$promotion['headline']}</h2>\n";
 		if (array_key_exists('body', $promotion)) echo "\t<p>{$promotion['body']}</p>\n";
-		if (array_key_exists('button-text', $promotion) && array_key_exists('button-url', $promotion)) echo "\t<a class=\"call-to-action\" href=\"{$promotion['button-url']}\" rel=\"noreferrer\">{$promotion['button-text']}</a>\n";
+		if (array_key_exists('button-text', $promotion) && array_key_exists('button-url', $promotion)) echo "\t<a class=\"call-to-action\" href=\"{$promotion['button-url']}\" target=\"_blank\" rel=\"noreferrer\">{$promotion['button-text']}</a>\n";
 		echo "</section>\n";
 	}
 ?>
