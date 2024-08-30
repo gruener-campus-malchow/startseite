@@ -123,7 +123,7 @@ function icon ($name) {
 	<?php
 	foreach ($tiles as $name => $data) {
 		// start tag
-		echo isset($data['href']) ? '<a href="' . $data['href'] . '" target="_blank" rel="noreferrer"' : '<div';
+		echo isset($data['href']) ? '<a href="' . $data['href'] . '" rel="noreferrer"' : '<div';
 		echo ' data-label="' . preg_replace('/\W/', '-', $name) . '"';
 		echo isset($data['layout']) ? ' class="grid-cell grid-cell-' . $data['layout'] . '">' : ' class="grid-cell">';
 
