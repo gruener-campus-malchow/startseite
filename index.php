@@ -32,6 +32,7 @@ $tiles = [
 	],
 	'Github' => [
 		'href' => 'https://github.com/gruener-campus-malchow',
+		'icon' => 'github',
 		'subtitle' => 'Code und Projekte, die wir manchmal wirklich benutzen',
 	],
 	'Timer' => [
