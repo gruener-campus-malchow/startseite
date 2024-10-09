@@ -11,10 +11,10 @@ $promotions = [
 		'button-url' => 'https://hackn8.de',
 	],
 	[
-		'start-date' => strtotime('2024-10-07'),
-		'end-date' => strtotime('2024-10-17 14:00'),
+		'start-date' => strtotime('2024-11-11'),
+		'end-date' => strtotime('2024-11-23 14:00'),
 		'headline' => '14hackn8@gcm',
-		'body' => 'vom <strong>16. Oktober 2024</strong> bis <strong>17. Oktober 2024</strong>',
+		'body' => 'vom <strong>22. November 2024</strong> bis <strong>23. November 2024</strong>',
 		'button-text' => 'Infos & Anmeldung',
 		'button-url' => 'https://hackn8.de',
 	],
