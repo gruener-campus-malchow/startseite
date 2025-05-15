@@ -103,7 +103,7 @@ function icon ($name) {
 		</button>
 	</form>
 	<div class="cis-section align-right">
-		<a class="secret" href="https://gcm.schule/admin/?geheim" target="_blank">Geheimer Admin-Bereich</a>
+		<!--a class="secret" href="https://gcm.schule/admin/?geheim" target="_blank">Geheimer Admin-Bereich</a-->
 	</div>
 </header>
 
