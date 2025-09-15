@@ -53,11 +53,17 @@ $tiles = [
 		'icon' => 'book',
 		'subtitle' => 'Unterrichtsmaterial einiger Kurse',
 	],
-	'GCM Slides' => [
-		'layout' => 'vertical',
+	'Slides' => [
+		/*'layout' => 'vertical',*/
 		'href' => 'https://docs.gcm.schule/slides/',
 		'icon' => 'layers',
 		'subtitle' => 'Präsentationen in 30 Sekunden™',
+	],
+	'Pad' => [
+		/*'layout' => 'vertical',*/
+		'href' => 'https://docs.gcm.schule/pad/',
+		'icon' => 'layers',
+		'subtitle' => 'Dokumente in 29 Sekunden™',
 	],
 	'Wheel of names' => [
 		'href' => 'https://gcm.schule/rad/',
