@@ -47,7 +47,7 @@ $tiles = [
 	'Pixelmap' => [
 		/*'layout' => 'vertical',*/
 		'href' => 'https://gcm.schule/pixelmap',
-		'icon' => 'pixel',
+		/*'icon' => 'pixel',*/
 	],
 	'Material' => [
 		'href' => 'https://gcm.schule/material/',
