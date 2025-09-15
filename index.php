@@ -88,9 +88,10 @@ $tiles = [
 ];
 
 function icon ($name) {
-	$src = 'icons/' . $name . '.svg';
+	if (preg_match('/[^a-z0-9_\-]/i', $name)) return;
+	$src = "icons/{$name}.svg";
 	if (file_exists($src)) {
-		include $src;
+		echo file_get_contents($src);
 	}
 }
 
