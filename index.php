@@ -25,8 +25,8 @@ $tiles = [
 		'href' => 'https://gcm.schule/vertretungsplan/',
 		'layout' => 'vertical',
 	],
-	'Lernraum' => [
-		'href' => 'https://11k10.lernraum-berlin.de/',
+	'Schulportal' => [
+		'href' => 'https://schulportal.berlin.de/',
 		'icon' => 'layout',
 		'layout' => 'horizontal',
 	],
@@ -58,6 +58,10 @@ $tiles = [
 		'href' => 'https://docs.gcm.schule/slides/',
 		'icon' => 'layers',
 		'subtitle' => 'Präsentationen in 30 Sekunden™',
+	],
+	'Wheel of names' => [
+		'href' => 'https://gcm.schule/rad/',
+		'subtitle' => 'Ein Zufall für Alle',
 	],
 	'PHP Cheat Sheet' => [
 		'href' => 'https://gcm.schule/php',
