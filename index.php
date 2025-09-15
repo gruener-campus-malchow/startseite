@@ -62,7 +62,7 @@ $tiles = [
 	'Pad' => [
 		/*'layout' => 'vertical',*/
 		'href' => 'https://docs.gcm.schule/pad/',
-		'icon' => 'layers',
+		'icon' => 'file-text',
 		'subtitle' => 'Dokumente in 29 Sekunden™',
 	],
 	'Wheel of names' => [
@@ -75,7 +75,7 @@ $tiles = [
 	],
 	'Datenschutz' => [
 		'href' => 'https://gcm.schule/datenschutz',
-		'icon' => 'file-text',
+		/*'icon' => 'file-text',*/
 	],
 	'Wikipedia GCM' => [
 		'href' => 'https://de.wikipedia.org/wiki/Grüner_Campus_Malchow',
