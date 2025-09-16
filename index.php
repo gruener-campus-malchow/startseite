@@ -47,7 +47,7 @@ $tiles = [
 	'Pixelmap' => [
 		/*'layout' => 'vertical',*/
 		'href' => 'https://gcm.schule/pixelmap',
-		/*'icon' => 'pixels',*/
+		'icon' => 'grid',
 	],
 	'Material' => [
 		'href' => 'https://gcm.schule/material/',
@@ -76,7 +76,7 @@ $tiles = [
 	],
 	'Datenschutz' => [
 		'href' => 'https://gcm.schule/datenschutz',
-		/*'icon' => 'file-text',*/
+		'icon' => 'users',
 	],
 	'Wikipedia GCM' => [
 		'href' => 'https://de.wikipedia.org/wiki/Grüner_Campus_Malchow',
