@@ -69,10 +69,12 @@ $tiles = [
 	'Wheel of names' => [
 		'href' => 'https://gcm.schule/rad/',
 		'subtitle' => 'Ein Zufall für Alle',
+		'icon' => 'loader',
 	],
 	'PHP Cheat Sheet' => [
 		'href' => 'https://gcm.schule/php',
 		'subtitle' => 'Nützliche PHP-Hacks',
+		'icon' => 'paperclip',
 	],
 	'Datenschutz' => [
 		'href' => 'https://gcm.schule/datenschutz',
