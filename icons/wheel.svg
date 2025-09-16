@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.1 -1.1 2.2 2.2" class="wheel" style="position: absolute;display: none;width: 80%;height: auto;z-index: -1;width: 120%;">
+<style>
+	@keyframes turn {
+		from {
+			transform: rotate(0deg)
+		}
+		to {
+			transform: rotate(360deg)
+		}
+	}
+</style>
+<g style="animation: turn 16s infinite linear;"><path d="M0,0L1,0A1,1 0 0 1 -0.4999999999999998,0.8660254037844387Z" stroke="black" style="fill: #c04;vector-effect: non-scaling-stroke;" stroke-width="2"/><path d="M0,0L-0.4999999999999998,0.8660254037844387A1,1 0 0 1 -0.5000000000000004,-0.8660254037844384Z" stroke="black" stroke-width="2" style="fill: #f59e0b;vector-effect: non-scaling-stroke;"/><path d="M0,0L-0.5000000000000004,-0.8660254037844384A1,1 0 0 1 1,-2.4492935982947064e-16Z" stroke="black" stroke-width="2" style="fill: #0a4;vector-effect: non-scaling-stroke;"/><circle cx="0" cy="0" r=".1" stroke="black" stroke-width="2" style="fill: #eee;vector-effect: non-scaling-stroke;"/></g></svg>

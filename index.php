@@ -66,8 +66,9 @@ $tiles = [
 		'icon' => 'file-text',
 		'subtitle' => 'Dokumente in 29 Sekunden™',
 	],
-	'Wheel of names' => [
+	'Wheel of Names' => [
 		'href' => 'https://gcm.schule/rad/',
+		'icon' => 'wheel',
 		'subtitle' => 'Ein Zufall für Alle',
 		'icon' => 'loader',
 	],

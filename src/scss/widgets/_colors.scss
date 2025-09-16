@@ -1,6 +1,6 @@
 .grid-container .grid-cell:not(.static):hover {
 
-	&[data-label="Lernraum"] {
+	&[data-label="Schulportal"] {
 		background-color: #fb0;
 		color: $black;
 	}
@@ -25,7 +25,7 @@
 		background-color: #7b0;
 	}
 
-	&[data-label="GCM-Slides"] {
+	&[data-label="Slides"] {
 
 	  background: repeating-linear-gradient(135deg, #80c, #08c, #80c 100vmax);
 	  background-size: 141.44vmax;
@@ -39,8 +39,18 @@
 
 	}
 
+	&[data-label="Pad"] {
+		background-color: #c04;
+	}
+
 	&[data-label="Wikipedia-GCM"] {
 		background-color: #d08;
 	}
 
+	&[data-label="Wheel-of-Names"] {
+		overflow: hidden;
+		svg {
+			display: block !important;
+		}
+	}
 }
