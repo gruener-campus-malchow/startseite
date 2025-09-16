@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-	const sass = require('node-sass');
+	const sass = require('sass');
 	
 	grunt.initConfig({
 		sass: {
