@@ -70,7 +70,6 @@ $tiles = [
 		'href' => 'https://gcm.schule/rad/',
 		'icon' => 'wheel',
 		'subtitle' => 'Ein Zufall für Alle',
-		'icon' => 'loader',
 	],
 	'PHP Cheat Sheet' => [
 		'href' => 'https://gcm.schule/php',
