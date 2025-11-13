@@ -11,8 +11,8 @@ $promotions = [
 		'button-url' => 'https://hackn8.de',
 	],
 	[
-		'start-date' => strtotime('2025-06-16'),
-		'end-date' => strtotime('2025-06-28 14:00'),
+		'start-date' => strtotime('2025-11-17'),
+		'end-date' => strtotime('2025-11-29 14:00'),
 		'headline' => '16hackn8@gcm',
 		'body' => 'vom <strong>28. November 2025</strong> bis <strong>29. November 2025</strong>',
 		'button-text' => 'Infos & Anmeldung',
