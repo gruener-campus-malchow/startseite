@@ -21,10 +21,10 @@ $promotions = [
 ];
 
 $tiles = [
-	'Vertretungsplan' => [
-		'href' => 'https://gcm.schule/vertretungsplan/',
-		'layout' => 'vertical',
-	],
+	//'Vertretungsplan' => [
+	//	'href' => 'https://gcm.schule/vertretungsplan/',
+	//	'layout' => 'vertical',
+	//],
 	'Schulportal' => [
 		'href' => 'https://schulportal.berlin.de/',
 		'icon' => 'layout',
