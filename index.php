@@ -90,7 +90,7 @@ $tiles = [
 		'href' => 'https://gcm.schule/pixelmap',
 		'icon' => 'grid',
 	],
-	['Links' => [
+	'Links' => [
 		'href' => 'https://gcm.schule/links',
 		'icon' => 'external-link',
 	]
