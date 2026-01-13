@@ -35,11 +35,6 @@ $tiles = [
 		'icon' => 'book-open',
 		'subtitle' => 'Mathe, Chemie, Physik',
 	],
-	'Github' => [
-		'href' => 'https://github.com/gruener-campus-malchow',
-		'icon' => 'github',
-		'subtitle' => 'Code und Projekte, die wir manchmal wirklich benutzen',
-	],
 	'Timer' => [
 		'layout' => 'vertical',
 		'href' => 'https://gcm.schule/timer.html',
@@ -48,11 +43,6 @@ $tiles = [
 		'href' => 'https://gruener-campus-malchow.de/',
 		'icon' => 'link',
 		'subtitle' => 'Weiterführende Informationen',
-	],
-	'Pixelmap' => [
-		/*'layout' => 'vertical',*/
-		'href' => 'https://gcm.schule/pixelmap',
-		'icon' => 'grid',
 	],
 	'Material' => [
 		'href' => 'https://gcm.schule/material/',
@@ -76,6 +66,11 @@ $tiles = [
 		'icon' => 'wheel',
 		'subtitle' => 'Ein Zufall für Alle',
 	],
+	'Github' => [
+		'href' => 'https://github.com/gruener-campus-malchow',
+		'icon' => 'github',
+		'subtitle' => 'Code und Projekte, die wir manchmal wirklich benutzen',
+	],
 	'PHP Cheat Sheet' => [
 		'href' => 'https://gcm.schule/php',
 		'subtitle' => 'Nützliche PHP-Hacks',
@@ -89,6 +84,11 @@ $tiles = [
 		'href' => 'https://de.wikipedia.org/wiki/Grüner_Campus_Malchow',
 		'icon' => 'globe',
 		'subtitle' => 'Eintrag zu unserer Schule',
+	],
+	'Pixelmap' => [
+		/*'layout' => 'vertical',*/
+		'href' => 'https://gcm.schule/pixelmap',
+		'icon' => 'grid',
 	]
 ];
 
