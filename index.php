@@ -84,6 +84,11 @@ $tiles = [
 		'href' => 'https://de.wikipedia.org/wiki/Grüner_Campus_Malchow',
 		'icon' => 'globe',
 		'subtitle' => 'Eintrag zu unserer Schule',
+	],
+	'Formelsammlung' => [
+		'href' => 'https://gcm.schule/formelsammlung.pdf',
+		'icon' => 'book',
+		'subtitle' => 'Mathe, Chemie, Physik',
 	]
 ];
 
