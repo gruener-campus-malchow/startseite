@@ -46,7 +46,7 @@ $tiles = [
 	],
 	'Material' => [
 		'href' => 'https://gcm.schule/material/',
-		'icon' => 'book',
+		'icon' => 'archive',
 		'subtitle' => 'Unterrichtsmaterial einiger Kurse',
 	],
 	'Slides' => [
