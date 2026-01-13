@@ -87,7 +87,7 @@ $tiles = [
 	],
 	'Formelsammlung' => [
 		'href' => 'https://gcm.schule/formelsammlung.pdf',
-		'icon' => 'book',
+		'icon' => 'book-open',
 		'subtitle' => 'Mathe, Chemie, Physik',
 	]
 ];
