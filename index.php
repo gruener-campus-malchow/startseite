@@ -89,6 +89,10 @@ $tiles = [
 		/*'layout' => 'vertical',*/
 		'href' => 'https://gcm.schule/pixelmap',
 		'icon' => 'grid',
+	],
+	['Links' => [
+		'href' => 'https://gcm.schule/links',
+		'icon' => 'external-link',
 	]
 ];
 
