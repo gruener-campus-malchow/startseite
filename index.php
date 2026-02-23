@@ -5,7 +5,7 @@ $promotions = [
 	[
 		'start-date' => strtotime('2026-02-22'),
 		'end-date' => strtotime('2026-03-17 18:00'),
-		'body' => '<img height=100px src=https://gcm.schule/banner_FfV_2026.jpg>',
+		'body' => '<img height=150px src=https://gcm.schule/banner_FfV_2026.jpg>',
 	],
 	[
 		'start-date' => strtotime('2025-11-17'),
