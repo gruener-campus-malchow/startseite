@@ -3,12 +3,12 @@
 date_default_timezone_set('Europe/Berlin');
 $promotions = [
 	[
-		'start-date' => strtotime('2023-12-01'),
-		'end-date' => strtotime('2024-01-12 18:00'),
-		'headline' => '12hackn8@gcm',
-		'body' => 'vom <strong>12. Januar 2024</strong> bis <strong>13. Januar 2024</strong>',
-		'button-text' => 'Infos & Anmeldung',
-		'button-url' => 'https://hackn8.de',
+		'start-date' => strtotime('2026-02-22'),
+		'end-date' => strtotime('2026-03-17 18:00'),
+		'headline' => 'Fest für Vielfalt',
+		'body' => 'am <strong>17. März 2026</strong>',
+		'button-text' => 'Infos',
+		'button-url' => 'https://gcm.schule/sor',
 	],
 	[
 		'start-date' => strtotime('2025-11-17'),
