@@ -6,7 +6,7 @@ $promotions = [
 		'start-date' => strtotime('2026-02-22'),
 		'end-date' => strtotime('2026-03-17 18:00'),
 		'headline' => 'Fest für Vielfalt',
-		'body' => 'am <strong>17. März 2026</strong> <img src=https://gcm.schule/banner_FfV_2026.jpg>',
+		'body' => 'am <strong>17. März 2026</strong> <img height=50px src=https://gcm.schule/banner_FfV_2026.jpg>',
 		'button-text' => 'Infos',
 		'button-url' => 'https://gcm.schule/sor',
 	],
