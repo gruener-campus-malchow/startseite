@@ -70,7 +70,7 @@ $tiles = [
 	],
 	'KeePass' => [
 		'href' => 'https://gcm.schule/keepass/',
-		'subtitle' => 'Nützliche PHP-Hacks',
+		'subtitle' => 'Eigene Passwortdatenbank verwalten',
 		'icon' => 'key',
 	],
 	'Datenschutz' => [
