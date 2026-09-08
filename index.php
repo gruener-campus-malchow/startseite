@@ -68,10 +68,10 @@ $tiles = [
 		'icon' => 'github',
 		'subtitle' => 'Code und Projekte, die wir manchmal wirklich benutzen',
 	],
-	'PHP Cheat Sheet' => [
-		'href' => 'https://gcm.schule/php',
+	'KeePass' => [
+		'href' => 'https://gcm.schule/keepass/',
 		'subtitle' => 'Nützliche PHP-Hacks',
-		'icon' => 'paperclip',
+		'icon' => 'key',
 	],
 	'Datenschutz' => [
 		'href' => 'https://gcm.schule/datenschutz',
